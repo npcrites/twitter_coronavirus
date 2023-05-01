@@ -24,22 +24,17 @@ with open(args.input_path) as f:
 if args.percent:
     for k in counts[args.key]:
         counts[args.key][k] /= counts['_all'][k]
-print("here")
 # print the count values
 #items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)
 items = sorted(counts[args.key].items(), key=lambda item: (item[1], item[0]), reverse=True)[:10]
 
-print(len(items))
 labels = [k for k, v in items]
 values = [v for k, v in items]
-print(labels)
-print(values)
 plt.bar(labels, values)
 plt.title(args.key + " + " + args.input_path)
 plt.ylabel('Count')
 if args.percent:
     plt.ylabel('Percentage')
-print("1")
 plt.xticks(range(len(labels)), labels, fontsize='small', rotation=45)
 
 # fig, ax = plt.subplots()
