@@ -111,8 +111,8 @@ Now manually inspect the output of the `.lang` file using vim:
 $ vim outputs/geoTwitter20-02-16.zip.lang
 ```
 You should see that the file contains a dictionary of dictionaries.
-The outermost dictionary has languages as the keys, 
-and the innermost dictionary has hashtags as the keys.
+The outermost dictionary has hashtags as the keys,
+and the innermost dictionary has languages as the keys.
 The `visualize.py` file simply provides a nicer visualization of these dictionaries.
 
 **Task 2: Reduce**
@@ -161,7 +161,7 @@ and one that ends in `.country` for the country dictionary.
 > which contains a dictionary with the `country_code` key.
 > This is how you should lookup the country that a tweet was sent from.
 > Some tweets, however, do not have a `country_code` key.
-> This can happen, for example, if the tweet was sent from international waters or the [international space station](https://unistellaroptics.com/10-years-ago-today-the-first-tweet-was-sent-directly-from-space/).
+> This can happen, for example, if the tweet was sent from international waters or the [international space station](https://web.archive.org/web/20220124224726/https://unistellaroptics.com/10-years-ago-today-the-first-tweet-was-sent-directly-from-space/).
 > Your code will have to be generic enough to handle edge cases similar to this without failing.
 
 **Task 1: Run the mapper**
